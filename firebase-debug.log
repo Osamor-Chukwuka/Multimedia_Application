@@ -1,0 +1,138 @@
+[debug] [2023-06-13T05:26:37.843Z] ----------------------------------------------------------------------
+[debug] [2023-06-13T05:26:37.847Z] Command:       /home/rav4en/.nvm/versions/node/v20.1.0/bin/node /home/rav4en/.nvm/versions/node/v20.1.0/bin/firebase init
+[debug] [2023-06-13T05:26:37.848Z] CLI Version:   12.3.1
+[debug] [2023-06-13T05:26:37.848Z] Platform:      linux
+[debug] [2023-06-13T05:26:37.849Z] Node Version:  v20.1.0
+[debug] [2023-06-13T05:26:37.849Z] Time:          Tue Jun 13 2023 06:26:37 GMT+0100 (West Africa Standard Time)
+[debug] [2023-06-13T05:26:37.849Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-06-13T05:26:37.859Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-06-13T05:26:37.860Z] > authorizing via signed-in user (osamorchukwuka15@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /home/rav4en/Documents/chuks/StackUp/react/multimedia-app
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2023-06-13T05:27:05.925Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2023-06-13T05:27:05.927Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"chuks-multimedia-app","name":"chuks-multimedia-app"}
+[debug] [2023-06-13T05:27:07.860Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 200
+[debug] [2023-06-13T05:27:07.861Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"name":"operations/cp.4791020040928367539"}
+[debug] [2023-06-13T05:27:07.864Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.4791020040928367539 [none]
+[debug] [2023-06-13T05:27:09.115Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.4791020040928367539 200
+[debug] [2023-06-13T05:27:09.116Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.4791020040928367539 {"name":"operations/cp.4791020040928367539","metadata":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.ProjectCreationStatus","ready":true},"done":true,"error":{"code":8,"message":"The project cannot be created because you have exceeded your allotted project quota.","details":[{"@type":"type.googleapis.com/google.rpc.QuotaFailure","violations":[{"description":"The project cannot be created because you have exceeded your allotted project quota."}]}]}}
+[debug] [2023-06-13T05:27:09.798Z] FirebaseError: The project cannot be created because you have exceeded your allotted project quota.
+    at OperationPoller.poll (/home/rav4en/.nvm/versions/node/v20.1.0/lib/node_modules/firebase-tools/lib/operation-poller.js:24:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async createCloudProject (/home/rav4en/.nvm/versions/node/v20.1.0/lib/node_modules/firebase-tools/lib/management/projects.js:186:29)
+    at async createFirebaseProjectAndLog (/home/rav4en/.nvm/versions/node/v20.1.0/lib/node_modules/firebase-tools/lib/management/projects.js:45:9)
+    at async promptAndCreateNewProject (/home/rav4en/.nvm/versions/node/v20.1.0/lib/node_modules/firebase-tools/lib/init/features/project.js:32:12)
+    at async doSetup (/home/rav4en/.nvm/versions/node/v20.1.0/lib/node_modules/firebase-tools/lib/init/features/project.js:88:27)
+    at async init (/home/rav4en/.nvm/versions/node/v20.1.0/lib/node_modules/firebase-tools/lib/init/index.js:37:9)
+[error] 
+[error] Error: Failed to create project. See firebase-debug.log for more info.
+[debug] [2023-06-13T05:28:18.251Z] ----------------------------------------------------------------------
+[debug] [2023-06-13T05:28:18.256Z] Command:       /home/rav4en/.nvm/versions/node/v20.1.0/bin/node /home/rav4en/.nvm/versions/node/v20.1.0/bin/firebase init
+[debug] [2023-06-13T05:28:18.256Z] CLI Version:   12.3.1
+[debug] [2023-06-13T05:28:18.257Z] Platform:      linux
+[debug] [2023-06-13T05:28:18.257Z] Node Version:  v20.1.0
+[debug] [2023-06-13T05:28:18.257Z] Time:          Tue Jun 13 2023 06:28:18 GMT+0100 (West Africa Standard Time)
+[debug] [2023-06-13T05:28:18.258Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-06-13T05:28:18.279Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-06-13T05:28:18.280Z] > authorizing via signed-in user (osamorchukwuka15@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /home/rav4en/Documents/chuks/StackUp/react/multimedia-app
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2023-06-13T05:28:43.418Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2023-06-13T05:28:43.421Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"chuks823-multimedia-app","name":"chuks823-multimedia-app"}
+[debug] [2023-06-13T05:28:45.078Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 200
+[debug] [2023-06-13T05:28:45.079Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"name":"operations/cp.8024571802245059078"}
+[debug] [2023-06-13T05:28:45.084Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.8024571802245059078 [none]
+[debug] [2023-06-13T05:28:46.327Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.8024571802245059078 200
+[debug] [2023-06-13T05:28:46.328Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.8024571802245059078 {"name":"operations/cp.8024571802245059078","metadata":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.ProjectCreationStatus","ready":true},"done":true,"error":{"code":8,"message":"The project cannot be created because you have exceeded your allotted project quota.","details":[{"@type":"type.googleapis.com/google.rpc.QuotaFailure","violations":[{"description":"The project cannot be created because you have exceeded your allotted project quota."}]}]}}
+[debug] [2023-06-13T05:28:47.015Z] FirebaseError: The project cannot be created because you have exceeded your allotted project quota.
+    at OperationPoller.poll (/home/rav4en/.nvm/versions/node/v20.1.0/lib/node_modules/firebase-tools/lib/operation-poller.js:24:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async createCloudProject (/home/rav4en/.nvm/versions/node/v20.1.0/lib/node_modules/firebase-tools/lib/management/projects.js:186:29)
+    at async createFirebaseProjectAndLog (/home/rav4en/.nvm/versions/node/v20.1.0/lib/node_modules/firebase-tools/lib/management/projects.js:45:9)
+    at async promptAndCreateNewProject (/home/rav4en/.nvm/versions/node/v20.1.0/lib/node_modules/firebase-tools/lib/init/features/project.js:32:12)
+    at async doSetup (/home/rav4en/.nvm/versions/node/v20.1.0/lib/node_modules/firebase-tools/lib/init/features/project.js:88:27)
+    at async init (/home/rav4en/.nvm/versions/node/v20.1.0/lib/node_modules/firebase-tools/lib/init/index.js:37:9)
+[error] 
+[error] Error: Failed to create project. See firebase-debug.log for more info.
+[debug] [2023-06-13T05:32:19.724Z] ----------------------------------------------------------------------
+[debug] [2023-06-13T05:32:19.840Z] Command:       /home/rav4en/.nvm/versions/node/v20.1.0/bin/node /home/rav4en/.nvm/versions/node/v20.1.0/bin/firebase init
+[debug] [2023-06-13T05:32:19.841Z] CLI Version:   12.3.1
+[debug] [2023-06-13T05:32:19.841Z] Platform:      linux
+[debug] [2023-06-13T05:32:19.842Z] Node Version:  v20.1.0
+[debug] [2023-06-13T05:32:19.842Z] Time:          Tue Jun 13 2023 06:32:19 GMT+0100 (West Africa Standard Time)
+[debug] [2023-06-13T05:32:19.842Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-06-13T05:32:19.865Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-06-13T05:32:19.866Z] > authorizing via signed-in user (osamorchukwuka15@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /home/rav4en/Documents/chuks/StackUp/react/multimedia-app
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2023-06-13T05:32:49.167Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2023-06-13T05:32:49.169Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"chuks813-multimedia-app","name":"chuks813-multimedia-app"}
+[debug] [2023-06-13T05:32:51.378Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 200
+[debug] [2023-06-13T05:32:51.379Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"name":"operations/cp.5174827689384022426"}
+[debug] [2023-06-13T05:32:51.381Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.5174827689384022426 [none]
+[debug] [2023-06-13T05:32:52.792Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.5174827689384022426 200
+[debug] [2023-06-13T05:32:52.793Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.5174827689384022426 {"name":"operations/cp.5174827689384022426","metadata":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.ProjectCreationStatus","ready":true},"done":true,"error":{"code":8,"message":"The project cannot be created because you have exceeded your allotted project quota.","details":[{"@type":"type.googleapis.com/google.rpc.QuotaFailure","violations":[{"description":"The project cannot be created because you have exceeded your allotted project quota."}]}]}}
+[debug] [2023-06-13T05:32:53.224Z] FirebaseError: The project cannot be created because you have exceeded your allotted project quota.
+    at OperationPoller.poll (/home/rav4en/.nvm/versions/node/v20.1.0/lib/node_modules/firebase-tools/lib/operation-poller.js:24:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async createCloudProject (/home/rav4en/.nvm/versions/node/v20.1.0/lib/node_modules/firebase-tools/lib/management/projects.js:186:29)
+    at async createFirebaseProjectAndLog (/home/rav4en/.nvm/versions/node/v20.1.0/lib/node_modules/firebase-tools/lib/management/projects.js:45:9)
+    at async promptAndCreateNewProject (/home/rav4en/.nvm/versions/node/v20.1.0/lib/node_modules/firebase-tools/lib/init/features/project.js:32:12)
+    at async doSetup (/home/rav4en/.nvm/versions/node/v20.1.0/lib/node_modules/firebase-tools/lib/init/features/project.js:88:27)
+    at async init (/home/rav4en/.nvm/versions/node/v20.1.0/lib/node_modules/firebase-tools/lib/init/index.js:37:9)
+[error] 
+[error] Error: Failed to create project. See firebase-debug.log for more info.
